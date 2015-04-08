@@ -1,38 +1,12 @@
 // Login Form
 $(document).ready(function() {
-	$('.mainDiv').html($('#mainDivRep').html());
-    var button = $('#loginButton');
-    var box = $('#loginBox');
-    var form = $('#loginForm');
-	button.removeAttr('href');
-    button.mouseup(function(login) {
-        box.toggle();
-        button.toggleClass('active');
-    });
-	form.mouseup(function() { 
-        return false;
-    });
-    $(this).mouseup(function(login) {
-        if(!($(login.target).parent('#loginButton').length > 0)) {
-            button.removeClass('active');
-            box.hide();
-        }
-    });
+$('.mainDiv').html($('#hadoopDiv').html());
 
-
-
-$(this).keyup(function(event) {
-	if (event.which == 27) { // 27 is 'Ecs' in the keyboard
-		$('#resultBox').css("display", "none");  // function close pop up
-	}  	
+$("#btnHadoop").on('click', this, function(){
+	$('.mainDiv').html($('#hadoopDiv').html());
 });
-
-
-$("#uploadSideButton").on('click', this, function(){
-	$('.mainDiv').html($('#uploadDiv').html());
-});
-$("#searchSideButton").on('click', this, function(){
-	$('.mainDiv').html($('#mainDivRep').html());
+$("#btnAddUser").on('click', this, function(){
+	$('.mainDiv').html($('#userAddDiv').html());
 });
 
 });
