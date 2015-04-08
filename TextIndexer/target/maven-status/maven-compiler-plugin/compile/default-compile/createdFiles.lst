@@ -1,0 +1,8 @@
+com/example/textIndexer/TextIndexer.class
+com/example/textIndexer/Map.class
+com/example/textIndexer/Reduce.class
+com/example/textIndexer/PDFLineRecordReader.class
+com/example/textIndexer/DBInputWritable.class
+com/example/textIndexer/DBOutputWritable.class
+com/example/textIndexer/textIndexerJob.class
+com/example/textIndexer/PDFInputFormat.class

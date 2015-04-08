@@ -1,0 +1,8 @@
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/textIndexerJob.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/DBOutputWritable.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/DBInputWritable.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/Reduce.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/PDFInputFormat.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/Map.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/TextIndexer.java
+/var/www/html/mybiglibrary/TextIndexer/src/main/java/com/example/textIndexer/PDFLineRecordReader.java

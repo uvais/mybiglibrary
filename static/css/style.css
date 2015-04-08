@@ -1,0 +1,25 @@
+/*html,body{width:100%;height:100%;padding:0;background:#fff;margin:0;font-family:arial}*/
+
+body {
+	background-image:url(../images/homeimage.jpg)
+}
+.mainDiv {
+	height: 459px;
+	position: absolute;
+	left: 333px;
+	top: 100px;
+	width: 700px;
+	font-weight: bold;
+	background-color: #E6A264;
+}
+
+.mainDiv form {
+	margin-top:20px;
+}
+a { text-decoration:none }
+
+
+#seachDivHtml {
+	margin-left: 150px;
+	
+}

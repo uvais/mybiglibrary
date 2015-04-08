@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+<!--<link type="text/css" rel="stylesheet" href="../static/css/style.css" />-->
+
+</head>
+<body>
+<div class="mainDiv">
+<div>
+<form action="query" method="POST">
+		<div id="seachDivHtml">
+			<div style="width: 400px; height:20px"><input type="text" style="width:100%" name="searchbar"/></div>
+				<div style="color:#000; font-weight:bold; width:400; margin-left:33px">
+					<label>
+						<input name="RadioGroup1" type="radio" value="kw" id="RadioGroup1_0" />
+					Keyword</label>
+					<label>
+						<input name="RadioGroup1" type="radio" value="au" id="RadioGroup1_1" />
+						Author</label>
+					<label>
+						<input name="RadioGroup1" type="radio" value="pb" id="RadioGroup1_2" />
+						Publisher</label>
+					<label>
+						<input name="RadioGroup1" type="radio" value="nm" id="RadioGroup1_3" />
+						Name</label>
+				</div>
+			<div style="width:400px; height:20px">
+			    	<div style="width: 200px; margin-left:100px">
+					<input type="submit" style="width: 100%" id="searchBtn" />
+			    	</div>
+		  	</div>
+		</div>
+	</form>
+</div>
+</div>
+</body>
+</html>

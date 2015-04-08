@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+<!--<script src="../static/js/jquery-1.7.1.js"></script>
+<script src="../static/js/login.js"></script>-->
+<!--<link type="text/css" rel="stylesheet" href="../static/css/style.css" />-->
+</head>
+<body>
+{% if session['name'] %}
+<div>
+<div style="float:left">Hi, Admin</div>
+<div style="float:right"><a href="{{ url_for('logout') }}">logout</a></div>
+<div style="clear:both"></div>
+<div>{{message}}</div>
+</div>
+<div class="mainDiv"> 
+	<form name="lform" method="post" action="../admin/upload" enctype="multipart/form-data">
+    	<div style="width:400px; margin-left:150px">
+    	<table width="100%">
+        <tr>
+    		<td width="44%">Select Your Files</td>
+            <td width="56%">
+                <input type="file" multiple style="height:20px; width: 100%;" name="file[]" id="fileupload" />
+            </td>
+        </tr>
+        </table>
+        </div>
+        <div style="width:200px; margin-top:15px; margin-left:250px"><input type="submit" value="Upload" style="width:100%"/></div>
+	</form>
+	<form name="rform" method="post" action="../admin/index">
+    	<div style="width:200px; margin-top:15px; margin-left:250px"><input type="submit" value="Index" style="width:100%"/></div>
+	</form>
+</div>
+{% else %}
+<a href="{{ url_for('nologin') }}">You have loggout from the current session</a>
+{% endif %}
+</body>
+</html>

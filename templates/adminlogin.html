@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<!--<script type="text/javascript" href="{{ url_for('static', filename='js/jquery-1.7.1.js') }}"></script>
+<script type="text/javascript" href="{{ url_for('static', filename='js/mjJS.js') }}"></script>
+<link type="text/css" rel="stylesheet" href="../static/css/style.css" />-->
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+{% if session['name'] %}
+	<a href="{{ url_for('rediret') }}">already loggedin</a>
+{% else %}
+<div class="mainDiv">
+<form action="/home" method="POST">
+<table id="loginbox">
+<tr>
+	<td>{{errormsg}}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>User ID</td>
+	<td><input type="text" id="uid" name="uid" /></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="password" id="pwd" name="pwd" /></td>
+</tr>
+<tr>
+	<td><input type="submit"/></td>
+</tr>
+</table>
+</form>
+</div>
+{% endif %}
+</body>
+</html>
